@@ -26,13 +26,13 @@ export function ClaimuUernameForm() {
     resolver: zodResolver(claimUsernameFormSchema),
   })
 
-  function handleCaimUsername(data: ClaimUsernameFormData) {
+  async function handleClaimUsername(data: ClaimUsernameFormData) {
     console.log(data)
   }
 
   return (
     <>
-      <Form as="form" onSubmit={handleSubmit(handleCaimUsername)}>
+      <Form as="form" onSubmit={handleSubmit(handleClaimUsername)}>
         <TextInput
           size="sm"
           prefix="ignite.com/"
