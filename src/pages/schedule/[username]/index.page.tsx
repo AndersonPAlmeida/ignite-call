@@ -2,8 +2,8 @@ import { Avatar, Heading, Text } from '@ignite-ui/react'
 import { Container, UserHeader } from './style'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import { prisma } from '../../../lib/prisma'
-import { ScheduleForm } from './scheduleForm/index.page'
 import { NextSeo } from 'next-seo'
+import { ScheduleForm } from './scheduleForm'
 
 interface ScheduleProps {
   user: {
